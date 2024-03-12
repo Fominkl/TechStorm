@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStorm</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about_us.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1><a href="../index.html">TechStorm</a></h1>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><button id="contacts-btn">Обратная связь</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="about-section">
+                <div class="about-content">
+                    <div class="text">
+                        <h2>О нас</h2>
+                        <p>Магазин техники TechStorm - это место, где вы можете найти широкий ассортимент качественной техники по доступным ценам. Мы стремимся предоставить нашим клиентам лучший сервис и помочь им сделать правильный выбор при покупке техники для дома, работы или развлечений.</p>
+                        <p>Наша команда состоит из профессионалов, которые всегда готовы помочь вам с выбором и ответить на все ваши вопросы. Мы следим за последними технологическими тенденциями и постоянно обновляем наш ассортимент, чтобы удовлетворить потребности наших клиентов.</p>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="../img/about_us/1.png" alt="Описание изображения">
+                </div>
+            </section>
+            <section class="contact">
+                <div class="map-section">
+                    <div class="map-container">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A73262c6b817ad86cd36b8c9a7bc55cf66a2b29b009b40ce08078d2dbd5a13de3&amp;source=constructor" width="859" height="580" frameborder="0"></iframe>
+                    </div>
+                </div>   
+                <div class="contact-info">
+                    <p>Адрес: Западная улица, 7с5, район Восточный, Восточный административный округ, Москва</p>
+                    <p>Телефон: +7 (987) 654-32-10</p>
+                    <p>Email: info@techstorm.com</p>
+                </div>
+            </section>  
+            <section id="contact-section" style="display: none;">
+                <div id="contact-form">
+                    <!-- Кнопка закрытия формы -->
+                    <div id="close-btn">✖</div>
+    
+                    <!-- Первая часть формы -->
+                    <div id="page1">
+                        <div class="form-header">
+                            <h2>Обратная связь</h2>
+                            <span id="form-progress" style="opacity: 0.7;">1/2</span>
+                        </div>
+    
+                        <label for="topic" style="opacity: 0.7;">Тема обращения:</label>
+                        <select id="topic"
+                            style="background-color: #3b3b3b; color: rgba(167, 226, 5, 0.7); border: none; width: 100%; padding: 10px; border-radius: 5px; margin-bottom: 35px;">
+                            <option value="general">Задать вопрос</option>
+                            <option value="general">Оставить жалобу</option>
+                            <option value="general">Поблагодарить</option>
+                            <option value="support">Внести обращение</option>
+                            <option value="feedback">Оставить коммерческое предложение</option>
+                        </select>
+    
+                        <label for="message" style="opacity: 0.7;">Сообщение до 2000 символов:</label>
+                        <textarea id="message" rows="4" maxlength="2000" placeholder="Сообщение до 2000 символов"
+                            style="height: 170px;"></textarea>
+    
+                        <input type="email" id="email" placeholder="Email для ответа*" required>
+    
+                        <button id="next-btn">Далее</button>
+                    </div>
+    
+                    <!-- Вторая часть формы (по умолчанию скрыта) -->
+                    <div id="page2" style="display: none;">
+                        <div class="form-header">
+                            <h2>Обратная связь</h2>
+                            <span id="form-progress">2/2</span>
+                        </div>
+    
+                        <input type="text" id="name" placeholder="Ваше имя*" required>
+    
+                        <input type="text" id="city" placeholder="Ваш город" required>
+    
+                        <button id="previous-btn">Назад</button>
+                        <button id="submit-btn">Отправить</button>
+                    </div>
+                </div>
+            </section>              
+        </div>
+    </main>     
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>О нас</h3>
+                    <p>Магазин техники TechStorm предлагает широкий ассортимент качественной техники по доступным ценам.
+                    </p>
+                </div>
+                <div class="footer-center">
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><img src="../img/social/1.png" alt=""></a>
+                        <a href="#" target="_blank"><img src="../img/social/2.png" alt=""></a>
+                        <a href="#" target="_blank"><img src="../img/social/3.png" alt=""></a>
+                        <a href="#" target="_blank"><img src="../img/social/4.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Контакты</h3>
+                    <p> Адрес: Западная улица, 7с5, район Восточный, Восточный административный округ, Москва<br>
+                        Телефон: +7 (987) 654-32-10<br>
+                        Email: info@techstorm.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
